@@ -1,17 +1,17 @@
 package main
 
 import (
-	"flag"
 	"github.com/go-martini/martini"
 	"github.com/martini-contrib/throttle"
 	"io/ioutil"
 	"log"
+	"fmt"
 	"net/http"
-	"os"
 	"time"
 )
 
 func main() {
+	fmt.Println(Logo)
 	m := martini.Classic()
 	// A Rate Limit Policy
 	m.Use(throttle.Policy(&throttle.Quota{
@@ -25,13 +25,7 @@ func main() {
 		Within: time.Second,
 	}))
 	m.Action(router().Handle)
-
-	portPtr := flag.String("port", "4000", "curtain port")
-	hostPtr := flag.String("host", "localhost", "curtain host")
-	flag.Parse()
-	martini.Env = martini.Prod
-	os.Setenv("HOST", *hostPtr)
-	os.Setenv("PORT", *portPtr)
+	martini.Env = martini.Dev
 	m.Run()
 }
 
@@ -50,6 +44,7 @@ func Public(params martini.Params, req *http.Request, log *log.Logger) (int, str
 		log.Printf("read body error:%s\n", err)
 		return http.StatusUnprocessableEntity, err.Error()
 	}
+	defer req.Body.Close()
 	filename, ok := params["name"]
 	log.Printf("filename:%+v, is:%+v\n", filename, ok)
 	if ok {
