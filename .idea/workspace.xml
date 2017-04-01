@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d3640d8-f13b-4f27-ad22-7989679f7ae8" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/nac.mainfest" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/nac.syso" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/curtain.exe" afterPath="$PROJECT_DIR$/bin/curtain.exe" />
+    <list default="true" id="7d3640d8-f13b-4f27-ad22-7989679f7ae8" name="Default" comment="修改开发环境为生成环境">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pkg/windows-amd64/curtain.a" afterPath="$PROJECT_DIR$/pkg/windows-amd64/curtain.a" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+    </list>
+    <list id="e6713702-33b6-44b4-b1e2-e82239a8ae26" name="Rejected commit: Default" comment="修改开发环境为生成环境">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/curtain.exe" afterPath="$PROJECT_DIR$/bin/curtain.exe" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/curtain/curtain.go" afterPath="$PROJECT_DIR$/src/curtain/curtain.go" />
     </list>
     <ignored path="curtain.iws" />
@@ -35,8 +34,8 @@
       <file leaf-file-name="curtain.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/curtain/curtain.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state relative-caret-position="411">
+              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
               <folding>
                 <element signature="e#14#143#0" expanded="true" />
               </folding>
@@ -111,7 +110,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-17" />
-    <option name="y" value="-9" />
+    <option name="y" value="-2" />
     <option name="width" value="1384" />
     <option name="height" value="738" />
   </component>
@@ -222,6 +221,7 @@
     <property name="configurable.Project.libraries.is.expanded" value="true" />
     <property name="configurable.Module.libraries.is.expanded" value="false" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="GO_FMT" value="false" />
   </component>
   <component name="RemoteSynchronizer">
     <option name="targetMappings">
@@ -376,11 +376,12 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-17" y="-9" width="1384" height="738" extended-state="0" />
+    <frame x="-17" y="-2" width="1384" height="738" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296501" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="RemoteSynchronizer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296501" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -411,6 +412,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="修改开发环境为生成环境" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改开发环境为生成环境" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -648,8 +653,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/curtain/curtain.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state relative-caret-position="411">
+          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
           <folding>
             <element signature="e#14#143#0" expanded="true" />
           </folding>

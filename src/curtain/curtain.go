@@ -25,7 +25,7 @@ func main() {
 		Within: time.Second,
 	}))
 	m.Action(router().Handle)
-	martini.Env = martini.Dev
+	martini.Env = martini.Prod
 	m.Run()
 }
 
